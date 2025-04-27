@@ -1,24 +1,34 @@
-
-
-html_content = """
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mes codes - Gaetan505</title>
+    <title>Mes projets - Gaetan505</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        h1 { color: #333; }
+        a.project-link {
+            display: block;
+            margin: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 8px;
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            transition: background-color 0.3s;
+        }
+        a.project-link:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <h1>Liste de mes fichiers</h1>
-    <ul>
-        <li><a href="code_ecart_prix (1).ipynb">code_ecart_prix (1).ipynb</a></li>
-    </ul>
+    <h1>Bienvenue sur mes projets</h1>
+    <p>Choisissez un projet ci-dessous :</p>
+    
+    <a class="project-link" href="code_ecart_prix (1).ipynb">Analyse écart prix (Notebook)</a>
+
 </body>
 </html>
-"""
-
-# Sauvegarde du fichier
-file_path = "/mnt/data/index.html"
-with open(file_path, "w", encoding="utf-8") as f:
-    f.write(html_content)
-
-file_path
