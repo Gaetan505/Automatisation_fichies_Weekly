@@ -1,12 +1,12 @@
-## Weekly Automation
+## Weekly Automatisation
 
 ## 🚀 Introduction
 
-Ce projet est une solution d'automatisation complète pour le traitement hebdomadaire de fichiers CSV récupérés depuis un compte Gmail et leur transformation en différents fichiers Excel sur Google Drive. L'objectif principal est de classer les données extraites en plusieurs catégories (CB, Hyper, Carma, IG, IRI) et de générer des fichiers comptables prêts à l'emploi.
+Ce projet est une solution d'automatisation complète pour le traitement hebdomadaire de fichiers CSV récupérés depuis un compte Gmail et leur transformation en différents fichiers Excel sur Google Drive. L'objectif principal est d'extraire automatiquement les fichiers Weekly reçus par mail, classer les données extraites en plusieurs catégories (CB, Hyper, Carma, IG, IRI) en fonction des règles métiers et de générer des fichiers comptables prêts à l'emploi. Ainsi les comptables n'auront plus qu'à se connecter sur le drive chaque matin et récupérer les fichiers déjà traités. Cette automatisation fais gagner aux comptables 4h par semaines ce qui est un gros gain de temps en entreprise. Ceci leur permet de se concentrer sur d'autres tâches.
 
 ## ✨ Fonctionnalités
 
-Connexion aux API Google Drive et Gmail pour télécharger et manipuler les fichiers (extraire les fichiers automatiquement par mail et les envoyer sur le drive).
+Connexion aux API Google Drive et Gmail pour télécharger et manipuler les fichiers.
 
 Normalisation des noms de sociétés pour une meilleure comparaison.
 
@@ -14,7 +14,7 @@ Téléchargement des fichiers Excel nécessaires depuis Google Drive.
 
 Filtrage, nettoyage et transformation des données.
 
-Classification des commandes en différentes catégories ((CB, Hyper, Carma, IG, IRI).
+Classification des commandes en différentes catégories (CB, Hyper, Carma, IG, IRI).
 
 Génération de fichiers Excel sur Google Drive organisés par semaine.
 
@@ -57,7 +57,7 @@ Authentification Google API : Connexion sécurisée aux services Drive et Gmail.
 
 Téléchargement des fichiers depuis Google Drive : Chargement des fichiers Excel nécessaires.
 
-Chargement de l'état : Lecture de l'historique des fichiers déjà traités.
+Chargement de l'état : Lecture de l'historique des fichiers déjà traités. Cette partie est très importante pour éviter de traiter les fichiers déjà traités.
 
 Recherche des nouveaux CSVs Gmail : Récupération des nouveaux fichiers CSV de commandes.
 
@@ -65,7 +65,7 @@ Filtrage et nettoyage : Tri des commandes par type (CB, Hyper, Orange, Rouge, No
 
 Génération des fichiers Excel : Export des données triées et nettoyées vers Drive.
 
-Mise à jour de l'état : Sauvegarde de l'historique de traitement.
+Mise à jour de l'état : Sauvegarde de l'historique de traitement. Pour éviter de les retraiter à la prochaine éxécution du code.
 
 
 ## 🐞 Débogage et Logs
@@ -77,14 +77,6 @@ Les étapes de traitement effectuées
 Les erreurs rencontrées
 
 Les fichiers créés et mis à jour
-
-## 🚀 Améliorations futures
-
-Ajouter des tests unitaires pour chaque module
-
-Optimiser le traitement des fichiers volumineux
-
-Ajouter un système de notifications (par email ou Slack) lors de l'exécution
 
 
 ## Gaetan DJAMBISSIE
